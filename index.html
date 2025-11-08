@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgriAid Wireframe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="navbar-brand">AgriAid</div>
+        <div class="nav-links">
+            <a href="#dashboard">Dashboard</a>
+            <a href="#upload">New Scan</a>
+            <a href="#">History</a>
+            <a href="#">Logout</a>
+        </div>
+    </nav>
+
+    <main class="page" id="dashboard">
+        <h2>Welcome, Farmer!</h2>
+        
+        <div class="grid-container">
+            <div class="card weather-alert">
+                <h3>Weather Alert</h3>
+                <p><strong>Warning:</strong> High humidity and rain expected in 48 hours. Risk of fungal infection is high. Consider proactive spraying.</p>
+            </div>
+
+            <div class="card main-action">
+                <h3>Have a sick plant?</h3>
+                <p>Get an instant diagnosis and treatment plan.</p>
+                <a href="#upload" class="button-primary">Upload Leaf Photo</a>
+            </div>
+
+            <div class="card">
+                <h3>Past Reports</h3>
+                <p>You have 3 reports from the last 14 days.</p>
+                <a href="#" class="button-secondary">View History</a>
+            </div>
+        </div>
+    </main>
+
+    <main class="page" id="upload" style="display: none;"> <h2>Upload New Image</h2>
+        <div class="card upload-box">
+            <p>Drag & drop your leaf image here, or click to select a file.</p>
+            <input type="file" id="file-upload" hidden>
+            <label for="file-upload" class="button-primary">Select Image</label>
+        </div>
+    </main>
+
+    <main class="page" id="result" style="display: none;"> <h2>Diagnosis Result</h2>
+        <div class="grid-container">
+            <div class="card">
+                <h3>Your Uploaded Image</h3>
+                <img src="https://via.placeholder.com/400x300.png?text=Diseased+Leaf+Image" alt="Diseased Leaf" class="result-image">
+                <h3>AI Diagnosis:</h3>
+                <h1 class="diagnosis-name">Tomato Early Blight</h1>
+                <p>(94% Confidence)</p>
+            </div>
+
+            <div class="card">
+                <h3>Personalized Advisory</h3>
+                
+                <h4>Organic Treatment</h4>
+                <ul>
+                    <li>Remove and destroy affected leaves immediately.</li>
+                    <li>Apply a copper-based fungicide or a neem oil solution.</li>
+                    <li>Ensure proper spacing for good air circulation.</li>
+                </ul>
+                
+                <h4>Chemical Treatment</h4>
+                <ul>
+                    <li>Apply fungicides containing chlorothalonil or mancozeb.</li>
+                    <li>Follow the manufacturer's instructions for mixing and application.</li>
+                </ul>
+
+                <h4>Prevention Tips</h4>
+                <p>Practice crop rotation and avoid watering the leaves directly.</p>
+            </div>
+        </div>
+    </main>
+
+    <div class="chatbot-bubble">
+        ?
+    </div>
+
+</body>
+</html>
