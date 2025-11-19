@@ -1,5 +1,23 @@
 {
   "dependencies": {
     "y": "^0.3.2"
-  }
+  },
+  "name": "y",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ad123-hi/AI-based-crop-detection.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ad123-hi/AI-based-crop-detection/issues"
+  },
+  "homepage": "https://github.com/ad123-hi/AI-based-crop-detection#readme"
 }
